@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[79]:
-
-
 import Bio
 from Bio import SeqIO
 import pandas as pd
@@ -12,20 +9,14 @@ import re
 import argparse
 
 
-# In[84]:
-
-
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '-f',help='input fasta file providing protein sequence')
+    '-f',help='input fasta file providing protein sequence. e.g.UP000005640_9606.fasta')
 parser.add_argument(
     '-a',help='requried aa type')
 parser.add_argument(
     '-o',help='output file with specific aa position in sequence')
 args = vars(parser.parse_args())
-
-
-# In[76]:
 
 
 getpos = []
